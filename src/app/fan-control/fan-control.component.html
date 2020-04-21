@@ -1,3 +1,4 @@
-<p>
-  fan-control works!
-</p>
+<ion-item [color]="fanStatusDisplay">
+  <ion-label>Fan</ion-label>
+  <ion-toggle [(ngModel)]="fanStatus" (ionChange)="onFanStatusChanged()"></ion-toggle>
+</ion-item>
